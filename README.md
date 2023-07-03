@@ -23,8 +23,19 @@
 
 8. Import and Use the Database Instance: In your main application file (e.g., index.js), import the database connection by including a line of code. This lets you interact with the PostgreSQL database in your application.
 
-### Code Configuration Snippet
+### Code Snippets
+```js
+$ npm install pg-promise
 ```
+
+```
+import pg-promise
+const initOptions = {/* initialization options */};
+const pgp = require ('pg-promise')
+(initOptions);
+
+const pgp = require('pg-promise');
+
 const connectionConfig = {
   host: 'localhost',
   port: 3000,
@@ -33,4 +44,9 @@ const connectionConfig = {
   password: 'your_password' //password from PGAdmin
 };
 
+const db = pgp(connectionConfig)
+
 ```
+
+### resources
+http://vitaly-t.github.io/pg-promise/
