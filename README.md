@@ -2,7 +2,7 @@
 
 ### Packages needed
 1. Express
-2. PostgreSQL
+2. PostgreSQL (pg-promise or node-postgre)
 3. Node.js
 
 ### Steps to Connect Postgre to Javascript Server
